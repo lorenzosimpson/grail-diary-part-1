@@ -174,9 +174,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4M-nl-roA">
-                                <rect key="frame" x="70" y="210" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yji-Jp-0jk">
+                                <rect key="frame" x="294" y="49" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4M-nl-roA">
+                                <rect key="frame" x="20" y="210" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,25 +193,34 @@
                                     <constraint firstAttribute="width" secondItem="XM6-CR-Pcl" secondAttribute="height" multiplier="1:1" id="fHa-43-FPe"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yji-Jp-0jk">
-                                <rect key="frame" x="294" y="49" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NIh-tM-53x">
+                                <rect key="frame" x="20" y="239" width="335" height="388"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0bQ-WY-wRw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XM6-CR-Pcl" firstAttribute="top" secondItem="V0i-gJ-Bsp" secondAttribute="top" id="D11-T8-sjS"/>
+                            <constraint firstItem="NIh-tM-53x" firstAttribute="top" secondItem="B4M-nl-roA" secondAttribute="bottom" constant="8" id="IUq-Fl-IWc"/>
                             <constraint firstItem="V0i-gJ-Bsp" firstAttribute="top" secondItem="0bQ-WY-wRw" secondAttribute="top" constant="20" id="Mzy-Be-sXG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="NIh-tM-53x" secondAttribute="bottom" constant="20" id="PTl-wf-KbY"/>
+                            <constraint firstItem="B4M-nl-roA" firstAttribute="leading" secondItem="XM6-CR-Pcl" secondAttribute="leading" id="VL9-Pa-4Hi"/>
                             <constraint firstItem="yji-Jp-0jk" firstAttribute="trailing" secondItem="V0i-gJ-Bsp" secondAttribute="trailing" id="WLb-rJ-eAn"/>
                             <constraint firstItem="0bQ-WY-wRw" firstAttribute="trailing" secondItem="V0i-gJ-Bsp" secondAttribute="trailing" constant="20" id="ZMW-uO-gEf"/>
                             <constraint firstItem="XM6-CR-Pcl" firstAttribute="leading" secondItem="0bQ-WY-wRw" secondAttribute="leading" constant="20" id="ZUW-sd-q3h"/>
+                            <constraint firstItem="NIh-tM-53x" firstAttribute="trailing" secondItem="yji-Jp-0jk" secondAttribute="trailing" id="adN-g1-YQd"/>
                             <constraint firstItem="yji-Jp-0jk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XM6-CR-Pcl" secondAttribute="trailing" constant="8" id="cu8-S7-p4y"/>
+                            <constraint firstItem="NIh-tM-53x" firstAttribute="leading" secondItem="B4M-nl-roA" secondAttribute="leading" id="kaq-I7-U3t"/>
                             <constraint firstItem="0bQ-WY-wRw" firstAttribute="trailing" secondItem="V0i-gJ-Bsp" secondAttribute="trailing" constant="20" id="lYP-0o-it9"/>
                             <constraint firstItem="V0i-gJ-Bsp" firstAttribute="top" secondItem="0bQ-WY-wRw" secondAttribute="top" constant="20" id="p52-pa-B8S"/>
                             <constraint firstItem="yji-Jp-0jk" firstAttribute="top" secondItem="V0i-gJ-Bsp" secondAttribute="bottom" constant="8" id="ppV-Vv-E5g"/>
+                            <constraint firstItem="B4M-nl-roA" firstAttribute="top" secondItem="XM6-CR-Pcl" secondAttribute="bottom" constant="40" id="twg-aC-av1"/>
+                            <constraint firstItem="NIh-tM-53x" firstAttribute="top" secondItem="B4M-nl-roA" secondAttribute="bottom" constant="8" id="xS0-k0-LuJ"/>
                             <constraint firstItem="V0i-gJ-Bsp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XM6-CR-Pcl" secondAttribute="trailing" constant="8" id="zD4-KU-bOL"/>
                         </constraints>
                     </view>
@@ -237,6 +251,9 @@
     </scenes>
     <resources>
         <image name="nyc" width="3125" height="3480"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
